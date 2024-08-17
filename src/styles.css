@@ -1,0 +1,9 @@
+.emoji-overlay {
+  position: fixed;
+  top: 50%; /* 上から50%の位置 */
+  left: 10px; /* 左からの距離を設定 */
+  transform: translateY(-50%); /* 高さの半分を引いて垂直中央に位置 */
+  font-size: 50px; /* 絵文字のサイズを設定 */
+  z-index: 10000; /* 他の要素の上に表示されるように設定 */
+  /* pointer-events: none; 絵文字がクリックイベントを受け取らないように設定 */
+}

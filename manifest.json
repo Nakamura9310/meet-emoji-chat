@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Google Meet Emoji",
+  "version": "1.0",
+  "description": "Adds a simple emoji to the Google Meet screen.",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["https://meet.google.com/*-*-*"],
+      "js": ["src/content.js"],
+      "css": ["src/styles.css"]
+    }
+  ],
+  "icons": {
+    "16": "images/icon16.png",
+    "48": "images/icon48.png",
+    "128": "images/icon128.png"
+  }
+}
